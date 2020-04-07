@@ -8,7 +8,7 @@ const forecast = (longetude, latitude ,callback) => {
             callback('Unable to connect to services', undefined)
         } else if (body.error) {
             var failure_msg = body.query
-            callback('unable to find location', undefined)
+            callback('Unable to find location', undefined)
         } else {
             callback(undefined, {
                 longetude: longetude,
